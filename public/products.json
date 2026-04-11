@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "CloudSync Pro",
+    "description": "Seamlessly sync your design assets across all your active devices.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "popular",
+    "features": ["100GB Storage", "Auto-backup", "Team Access"],
+    "icon": "Cloud"
+  },
+  {
+    "id": 2,
+    "name": "DevKit UI",
+    "description": "A comprehensive library of React components tailored for delivery.",
+    "price": 89,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Tailwind Ready", "Figma Files", "Lifetime Updates"],
+    "icon": "Layout"
+  },
+  {
+    "id": 3,
+    "name": "Analytica Tool",
+    "description": "Deep dive into your user behavior with real-time heatmaps.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "Top Rated",
+    "tagType": "popular",
+    "features": ["Unlimited Sites", "Custom Reports", "API Access"],
+    "icon": "BarChart"
+  }
+]
