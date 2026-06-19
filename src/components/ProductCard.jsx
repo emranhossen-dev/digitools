@@ -1,14 +1,10 @@
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, addToCart, isInCart }) => {
   const getTagColor = (type) => {
     switch (type) {
-      case 'popular': 
-        return 'bg-purple-50 text-purple-600';
-      case 'new': 
-        return 'bg-green-50 text-green-600';
-      case 'best-seller': 
-        return 'bg-amber-50 text-amber-600';
-      default: 
-        return 'bg-gray-50 text-gray-600';
+      case 'popular': return 'bg-purple-50 text-purple-600';
+      case 'new': return 'bg-green-50 text-green-600';
+      case 'best-seller': return 'bg-amber-50 text-amber-600';
+      default: return 'bg-gray-50 text-gray-600';
     }
   };
 
@@ -39,13 +35,7 @@ const ProductCard = ({ product }) => {
         <ul className="space-y-3 mb-8">
           {product.features.map((feature, index) => (
             <li key={index} className="text-[13px] text-gray-500 font-normal flex items-start gap-2.5">
-              <svg 
-                className="w-4 h-4 text-green-500 mt-0.5 shrink-0" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2.5" 
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
               <span>{feature}</span>
@@ -54,8 +44,12 @@ const ProductCard = ({ product }) => {
         </ul>
       </div>
 
-      <button className="w-full py-3.5 bg-[#7C3AED] hover:bg-[#6D28D9] text-white rounded-xl font-semibold text-sm shadow-sm transition-colors duration-200 cursor-pointer">
-        Buy Now
+      <button 
+        onClick={() => addToCart(product)}
+        disabled={isInCart}
+        className={`w-full py-3.5 rounded-xl font-semibold text-sm shadow-sm transition-colors duration-200 cursor-pointer ${isInCart ? 'bg-green-100 text-green-600 cursor-not-allowed' : 'bg-[#7C3AED] hover:bg-[#6D28D9] text-white'}`}
+      >
+        {isInCart ? 'Added to cart' : 'Buy Now'}
       </button>
     </div>
   );
