@@ -22,4 +22,5 @@ Follow these simple steps to run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/emranhossen-dev/digitools.git](https://github.com/emranhossen-dev/digitools.git)
+   git clone https://github.com/emranhossen-dev/digitools.git
+   
