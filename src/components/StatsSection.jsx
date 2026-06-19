@@ -1,6 +1,6 @@
 const StatsSection = () => (
   <div className="w-full bg-[#7C3AED] py-14">
-    <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center text-center text-white px-6 gap-8 md:gap-4">
+    <div className="max-w-300 mx-auto flex flex-col md:flex-row justify-between items-center text-center text-white px-6 gap-8 md:gap-4">
       <div className="flex-1">
         <div className="text-4xl lg:text-5xl font-extrabold">50K+</div>
         <div className="mt-2 text-sm text-purple-100 font-medium">Active Users</div>

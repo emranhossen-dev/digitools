@@ -14,7 +14,7 @@ const ProductSection = ({ cart, addToCart, removeFromCart, proceedToCheckout, ac
 
   return (
     <div className="w-full bg-[#F9FAFB] py-20 border-b border-gray-100">
-      <div className="max-w-[1200px] mx-auto min-h-[400px] px-6">
+      <div className="max-w-300 mx-auto min-h-100 px-6">
         
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold mb-4 text-gray-900 tracking-tight">Premium Digital Tools</h2>
